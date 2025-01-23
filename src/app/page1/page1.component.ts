@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './page1.component.css'
 })
 export class Page1Component {
-
+  num = 50;
+  increment() {
+    this.num++;
+  }
 }
