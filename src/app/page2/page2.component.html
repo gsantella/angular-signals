@@ -1,1 +1,16 @@
-<p>page2 works!</p>
+
+<div class="porcupine">
+    <div style="display:flex;flex-direction: column;">
+        <label style='height: 100%;' for="age">Age:</label>
+        <label style='height: 100%;' for="email">Email:</label>  
+    </div>
+    <div style="display:flex;flex-direction: column;">
+        <input [(ngModel)]="appState.age" type="text" id="age">
+        <input [(ngModel)]="appState.email" type="email" id="email">
+    
+    </div>
+    <br>
+
+    
+</div>
+<a routerLink="/page1">Prev</a> | <a routerLink="/page3">Next</a> 

@@ -1,1 +1,16 @@
-<p>zach</p>
+
+<div class="porcupine">
+    <div style="display:flex;flex-direction: column;">
+        <label style='height: 100%;' for="first">First Name:</label>
+        <label style='height: 100%;' for="first"for="last">Last Name:</label>  
+    </div>
+    <div style="display:flex;flex-direction: column;">
+        <input [(ngModel)]="appState.fN" type="text" id="first">
+        <input [(ngModel)]="appState.lN" type="text" id="last">
+    
+    </div>
+
+    <br>
+    
+</div>
+<a routerLink="/page2">Next</a> 

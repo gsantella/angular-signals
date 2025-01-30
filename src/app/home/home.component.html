@@ -1,0 +1,14 @@
+<div class="parent">
+    <div class="div1"> 
+        @for(instanceNumber of range;track instanceNumber){
+            <article style="margin-bottom: 10px;">
+            <app-counter [counterNumber]='instanceNumber'/>
+            </article>
+        }
+    </div>
+        <div class="div2">
+            <article>
+            <p>Gloval: Signal:[{{globalNum.counter()}}]</p>
+            </article>
+        </div>
+</div>
