@@ -1,1 +1,19 @@
-<p>page2 works!</p>
+<h2>Step 2: Enter Your Age and Email</h2>
+
+<label>Age:</label>
+<input 
+  type="number" 
+  [value]="dataService.age()" 
+  (input)="updateField('age', $event)" 
+/>
+
+<label>Email:</label>
+<input 
+  type="email" 
+  [value]="dataService.email()" 
+  (input)="updateField('email', $event)" 
+/>
+
+<div class="nav-buttons">
+  <a routerLink="/page3"><button>Next</button></a>
+</div>

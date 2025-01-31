@@ -1,0 +1,12 @@
+<h2>Step 3: Enter Webhook URL</h2>
+
+<label>Webhook URL:</label>
+<input 
+  type="text" 
+  [value]="dataService.webhookUrl()" 
+  (input)="updateField('webhookUrl', $event)" 
+/>
+
+<div class="nav-buttons">
+  <button (click)="submitForm()">Submit</button>
+</div>
