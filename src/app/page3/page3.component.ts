@@ -4,17 +4,13 @@ import { DatastorageService } from '../datastorage.service';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-page2',
+  selector: 'app-page3',
   imports: [FormsModule, RouterLink],
-  templateUrl: './page2.component.html',
-  styleUrl: './page2.component.css'
+  templateUrl: './page3.component.html',
+  styleUrl: './page3.component.css'
 })
-export class Page2Component {
+export class Page3Component {
 
-  adata: any = ""
-
-  edata: any = ""
-
-  constructor(public datastorageService: DatastorageService) {}
+constructor(public datastorageService: DatastorageService) {}
 
 }
