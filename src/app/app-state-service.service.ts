@@ -1,13 +1,13 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, Signal, signal } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AppStateServiceService {
-  age = signal('')
-  email=signal('')
-  lN=signal('')
-  fN=signal('')
+  age:Signal<string>= signal('')
+  email:Signal<string>=signal('')
+  lN:Signal<string>=signal('')
+  fN:Signal<string>=signal('')
   
 
   constructor() { }
