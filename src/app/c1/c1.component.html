@@ -1,0 +1,27 @@
+<h1>Part 1:</h1>
+
+<!-- Didn't need this part but I thought it would be cool to be able to update it more than once -->
+
+<input [(ngModel)]="val1" placeholder="First Name">
+&nbsp;
+<input [(ngModel)]="val2" placeholder="Last Name">
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+<h2>Name Together: {{fullName()}} </h2>
+
+<button (click)="updateName()"> Update Name</button>
+
+
+<h1><strong>______________________________________________________</strong></h1>
+
+
+<h1>Part 2:</h1>
+
+<h2>Xcoords: {{ xCoords }} Ycoords: {{ yCoords }}</h2>
+
+<p></p>
+
+<button (click)="onClick($event)">Click For Coords</button>
+
+
