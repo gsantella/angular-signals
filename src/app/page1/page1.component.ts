@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
+import { SignalService } from '../shared/signal.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-page1',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './page1.component.html',
-  styleUrl: './page1.component.css'
+  styleUrls: ['./page1.component.css']
 })
 export class Page1Component {
-  num = 50;
-  increment() {
-    this.num++;
-  }
+  constructor(public signalService: SignalService) {}
 }
